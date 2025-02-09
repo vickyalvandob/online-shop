@@ -18,7 +18,7 @@ onMounted(() => {
         <Navbar />
         
         <Sidebar />
-        <main class="p-4 md:ml-64 h-auto pt-20">
+        <main class="p-4 md:ml-64 min-h-[100vh] pt-20">
             <slot/>
         </main>
   </div>

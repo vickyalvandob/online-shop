@@ -43,6 +43,7 @@ Route::middleware('auth', 'admin')->prefix('admin')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
 
     Route::get('/products', [ProductController::class, 'index'])->name('admin.product.index');
+    Route::post('/product/store', [ProductController::class, 'store'])->name('admin.product.store');
 });
 
 require __DIR__.'/auth.php';
